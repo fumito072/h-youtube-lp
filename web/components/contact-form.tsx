@@ -1,63 +1,117 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
 
-export function ContactForm() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+interface FormData {
+  name: string
+  company: string
+  email: string
+  phone: string
+  message: string
+}
 
-  const handleSubmit = (e: React.FormEvent) => {
+export function ContactForm({ type }: { type: string }) {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    message: ''
+  })
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', { name, email, message })
-    // Reset form fields
-    setName('')
-    setEmail('')
-    setMessage('')
+    // Handle form submission
+    console.log('Form submitted:', formData)
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <Label htmlFor="name">お名前</Label>
-        <Input
+        <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-1">
+          お名前 <span className="text-red-500">*</span>
+        </label>
+        <input
+          type="text"
           id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          name="name"
           required
-          className="mt-1"
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
         />
       </div>
+
       <div>
-        <Label htmlFor="email">メールアドレス</Label>
-        <Input
-          id="email"
+        <label htmlFor="company" className="block text-sm font-medium text-gray-800 mb-1">
+          会社名 <span className="text-red-500">*</span>
+        </label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          required
+          value={formData.company}
+          onChange={handleChange}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-gray-800 mb-1">
+          メールアドレス <span className="text-red-500">*</span>
+        </label>
+        <input
           type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          id="email"
+          name="email"
           required
-          className="mt-1"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
         />
       </div>
+
       <div>
-        <Label htmlFor="message">お問い合わせ内容</Label>
-        <Textarea
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-          className="mt-1"
-          rows={5}
+        <label htmlFor="phone" className="block text-sm font-medium text-gray-800 mb-1">
+          電話番号
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
         />
       </div>
-      <Button type="submit" className="w-full">
+
+      <div>
+        <label htmlFor="message" className="block text-sm font-medium text-gray-800 mb-1">
+          お問い合わせ内容 <span className="text-red-500">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          value={formData.message}
+          onChange={handleChange}
+          rows={5}
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"
+        />
+      </div>
+
+      <button
+        type="submit"
+        className="w-full bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition-colors"
+      >
         送信する
-      </Button>
+      </button>
     </form>
   )
 }
