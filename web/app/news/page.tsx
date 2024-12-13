@@ -1,14 +1,15 @@
 import { Navigation } from "@/components/navigation"
 import { NewsFilters } from "@/components/news-filters"
 import { NewsList } from "@/components/news-list"
-import { NewsItem } from "@/models/News"
+import clientPromise from "@/lib/mongodb"
+import { News, NewsItem } from "@/models/News"
+
 
 async function getNews(): Promise<NewsItem[]> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/news`, { cache: 'no-store' })
-  if (!res.ok) {
-    throw new Error('Failed to fetch news')
-  }
-  return res.json()
+  const client = await clientPromise
+  const db = client.db("mediaaid")
+  const newsModel = new News(db)
+  return newsModel.getAll()
 }
 
 export default async function NewsPage() {
