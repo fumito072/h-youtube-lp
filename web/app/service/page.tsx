@@ -1,10 +1,14 @@
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CaseStudies } from "../../components/ui/case-studies"
+import { Navigation } from "@/components/navigation"
+import { Space } from "lucide-react"
 
 export default function ServicePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white text-gray-900">
+      <Navigation />
+      <Space />
       <div className="container mx-auto px-4 py-12 space-y-24">
         {/* Section 1: Product PR */}
         <Card className="p-8">
