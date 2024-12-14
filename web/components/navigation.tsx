@@ -39,7 +39,7 @@ export function Navigation() {
             </motion.button>
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.png?height=64&width=64"
+                src="/logo.png"
                 alt="Forever Amusement Inc. logo"
                 width={64}
                 height={64}
