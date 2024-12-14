@@ -15,7 +15,6 @@ export function CaseStudies() {
             results: "TikTok、YouTube、インスタグラムで計10万人ほどに視聴していただき、認知と集客に繋げました。"
           }}
           youtubeUrl="https://www.youtube.com/watch?v=G9zpeNqMbn0"
-          className="bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm text-white"
         />
       </AnimatedSection>
 
@@ -31,7 +30,6 @@ export function CaseStudies() {
           }}
           youtubeUrl="https://www.youtube.com/watch?v=VVCpgjI9VTo"
           title=""
-          className="bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm text-white"
         />
       </AnimatedSection>
 
@@ -47,7 +45,6 @@ export function CaseStudies() {
             results: "半年間の運用で全SNSの総フォロワー1万人越え。LINE@の追加人数も500人を超え実際、２３区内の不動産仲介を複数契約させることができた。"
           }}
           title=""
-          className="bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm text-white"
         />
       </AnimatedSection>
 
@@ -61,7 +58,6 @@ export function CaseStudies() {
             results: "6CH運用し計12万人登録。15ヶ月で40万円の商品計300人以上にご購入頂いた。現在、各CHの2万人達成とファンを増やすために新たな角度からの動画も投稿中。"
           }}
           title=""
-          className="bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm text-white"
         />
       </AnimatedSection>
 
@@ -73,9 +69,7 @@ export function CaseStudies() {
           details={{
             case: "企業のような集客の為にてはなく、クリエイター育成を行う。バズるためのコンセプトや編集方法まで全て指示。最初は看護師インフルエンサーであったが、市場が小さい為、美容形インフルエンサーに枠を広げ現在は活動している。",
             results: "現在総フォロワー5万人を誇り100万再生動画は10本以上。企業タイアップ動画が半分以上になるほど信頼度が厚いCHになっている。"
-          }}
-          className="bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm text-white"
-        />
+          }} title={""}        />
       </AnimatedSection>
     </div>
   )

@@ -10,7 +10,7 @@ interface FormData {
   message: string
 }
 
-export function ContactForm({ type }: { type: string }) {
+export function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     company: '',

@@ -82,8 +82,6 @@ export function VideoCarousel() {
             <div className="aspect-video">
               <YouTubeEmbed
                 videoid={video.id}
-                height="100%"
-                width="100%"
                 params="rel=0"
               />
             </div>
