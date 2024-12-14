@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -36,8 +37,15 @@ export function Navigation() {
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </motion.button>
-            <Link href="/" className="text-xl font-bold tracking-wider">
-              Media Aid
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo.png?height=64&width=64"
+                alt="Forever Amusement Inc. logo"
+                width={64}
+                height={64}
+                className="mr-2"
+              />
+              <span className="text-xl font-bold tracking-wider">Forever Amusement Inc.</span>
             </Link>
           </div>
           <div className="hidden md:flex space-x-8">

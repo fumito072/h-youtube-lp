@@ -59,7 +59,7 @@ export function Mission() {
         transition={{ duration: 0.8, delay: 0.8 }}
       >
         <a 
-          href="#" 
+          href="/service" 
           className="inline-block bg-emerald-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-emerald-700 transition-colors duration-300"
         >
           私たちの旅に参加する
