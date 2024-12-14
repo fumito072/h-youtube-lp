@@ -18,15 +18,6 @@ export function Navigation() {
             <Link href="/service" className="hover:text-gray-300 transition-colors">
               Service
             </Link>
-            <Link href="/news" className="hover:text-gray-300 transition-colors">
-              News
-            </Link>
-            <Link href="/blog" className="hover:text-gray-300 transition-colors">
-              Blog
-            </Link>
-            <Link href="/recruit" className="hover:text-gray-300 transition-colors">
-              Recruit
-            </Link>
             <Link href="/contact" className="hover:text-gray-300 transition-colors">
               Contact
             </Link>
