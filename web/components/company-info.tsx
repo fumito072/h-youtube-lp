@@ -32,10 +32,8 @@ export function CompanyInfo() {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900">ミッション</h2>
                 <p className="text-gray-800 text-lg leading-relaxed">
-                「全ての大人にワクワクを」
-                子供時代はワクワクしていたのに大人になるとイヤイヤ仕事に行き1日が終わる」
-                そんな毎日を生きる大人達が「こんな働き方あるんだ！」「毎日が楽しい！」
-                と思うような社会を作って行きたい。このように日々考え、事業づくりをしております。
+                全ての大人にワクワクを
+                「子供時代はワクワクしていたのに大人になるとイヤイヤ仕事に行き1日が終わる」そんな毎日を生きる大人達が「こんな働き方あるんだ!」「毎日が楽しい!」と思うような社会を作って行きたい。このように日々考え、事業づくりをしております。
                 </p>
               </div>
   
@@ -43,8 +41,7 @@ export function CompanyInfo() {
               {/* <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900">ビジョン</h2>
                 <p className="text-gray-800 text-lg leading-relaxed">
-                  2025年までに、日本のSNSを活用した採用市場において、
-                  最も信頼されるプラットフォームを目指します。
+                
                 </p>
               </div> */}
             </div>

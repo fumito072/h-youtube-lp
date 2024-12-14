@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CaseStudies } from "./case-studies"
+import { CaseStudies } from "../../components/ui/case-studies"
 
 export default function ServicePage() {
   return (
