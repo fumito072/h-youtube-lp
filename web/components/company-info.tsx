@@ -9,22 +9,21 @@ export function CompanyInfo() {
                 <h2 className="text-3xl font-bold text-gray-900">会社概要</h2>
                 <div className="grid grid-cols-1 md:grid-cols-[200px,1fr] gap-4 text-gray-800">
                   <div className="font-medium">会社名</div>
-                  <div>株式会社メディアエイド</div>
+                  <div> Forever Amusement Inc.</div>
                   
                   <div className="font-medium">設立</div>
-                  <div>2020年4月1日</div>
+                  <div>設立準備中</div>
                   
                   <div className="font-medium">代表取締役</div>
-                  <div>山田 太郎</div>
+                  <div>松永 陽太郎</div>
                   
                   <div className="font-medium">所在地</div>
-                  <div>〒100-0001 東京都千代田区1-1-1</div>
+                  <div>神奈川県川崎市</div>
                   
                   <div className="font-medium">事業内容</div>
                   <div className="space-y-2">
-                    <p>・SNSマーケティング支援</p>
-                    <p>・採用支援サービス</p>
-                    <p>・コンテンツ制作</p>
+                    <p>・SNS運用代行事業</p>
+                    <p>・コンサル事業</p>
                   </div>
                 </div>
               </div>
@@ -33,19 +32,18 @@ export function CompanyInfo() {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900">ミッション</h2>
                 <p className="text-gray-800 text-lg leading-relaxed">
-                  テクノロジーとクリエイティブの力で、企業と人材の最適なマッチングを実現し、
-                  より良い社会づくりに貢献します。
+                全ての大人にワクワクを
+                「子供時代はワクワクしていたのに大人になるとイヤイヤ仕事に行き1日が終わる」そんな毎日を生きる大人達が「こんな働き方あるんだ!」「毎日が楽しい!」と思うような社会を作って行きたい。このように日々考え、事業づくりをしております。
                 </p>
               </div>
   
               {/* Vision */}
-              <div className="space-y-6">
+              {/* <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900">ビジョン</h2>
                 <p className="text-gray-800 text-lg leading-relaxed">
-                  2025年までに、日本のSNSを活用した採用市場において、
-                  最も信頼されるプラットフォームを目指します。
+                
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
