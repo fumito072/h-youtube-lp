@@ -1,103 +1,97 @@
 'use client'
 
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { useRef, useEffect, useState } from "react"
 import { YouTubeEmbed } from '@next/third-parties/google'
-import { useState, useEffect, useRef } from "react"
 
 const videos = [
   {
-    id: 'ogfYd705cRs',
-    title: '東京でマンションおすすめが詐欺されていない穴場エリア厳選１０箇所！！',
+    id: 'KbwqgnZTvpE',
+    title: '日本がインドネシアに絶縁宣言！高速鉄道でついにやり返したこととは何なのか？！',
   },
   {
-    id: 'ogfYd705cRs',
-    title: 'トランプ大統領が本気でカナダをアメリカ51番目の州に併合しようとして大炎上',
+    id: 'Gd1_s9xNWpI',
+    title: 'なぜ死者数世界一のヴィクトリア湖は毎年5000人もなくなるのか？',
   },
   {
-    id: 'ogfYd705cRs',
-    title: '【正確的に】女性兵士が多い国ランキング！',
+    id: 'nDJjiDAhypU',
+    title: '日本に頼んだイタリア鉄道と中国に頼んだチェコ鉄道の末路がヤバすぎた…',
+  },
+  {
+    id: "M_apHd1-dxk",
+    title: "【1位ブッチギリ】今後最も人口が減る都道府県 TOP10…！"
+  },
+  {
+    id: "hzItoB51w9E",
+    title: "hzItoB51w9E"
+  },
+  {
+    id: "6_SgKoMqRZ8",
+    title: "日本と組んだテキサス新幹線と中国と組んだカリフォルニア新幹線の末路。"
+  },
+  {
+    id: "h7pqkz6oLJk",
+    title: "夜行バスに大阪～東京で乗ったら運転手が大激怒でヤバすぎた"
+  },
+  {
+    id: "zXkF3HJyAcQ",
+    title: "【絶望】なぜ京都市は10年以内に財政破綻するのか"
   }
 ]
 
 export function VideoCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isVisible, setIsVisible] = useState(false)
-  const carouselRef = useRef<HTMLDivElement>(null)
-
-  const nextVideo = () => {
-    setCurrentIndex((prev) => (prev + 1) % videos.length)
-  }
-
-  const previousVideo = () => {
-    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length)
-  }
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const [videoWidth, setVideoWidth] = useState(320) // Default width
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.unobserve(entry.target)
-        }
-      },
-      {
-        threshold: 0.1
-      }
-    )
+    const scrollContainer = scrollRef.current
+    if (!scrollContainer) return
 
-    if (carouselRef.current) {
-      observer.observe(carouselRef.current)
+    const moveVideo = () => {
+      const firstVideo = scrollContainer.firstElementChild as HTMLElement
+      if (!firstVideo) return
+
+      const videoWidth = firstVideo.offsetWidth
+      setVideoWidth(videoWidth)
+
+      scrollContainer.style.transition = 'transform 0.5s linear'
+      scrollContainer.style.transform = `translateX(-${videoWidth}px)`
+
+      setTimeout(() => {
+        scrollContainer.style.transition = 'none'
+        scrollContainer.style.transform = 'translateX(0)'
+        scrollContainer.appendChild(firstVideo)
+      }, 500)
     }
 
-    return () => {
-      if (carouselRef.current) {
-        observer.unobserve(carouselRef.current)
-      }
-    }
+    const intervalId = setInterval(moveVideo, 3000) // Adjust speed here
+
+    return () => clearInterval(intervalId)
   }, [])
 
   return (
-    <div 
-      ref={carouselRef}
-      className={`relative w-full max-w-4xl mx-auto transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
-    >
-      <Button
-        variant="ghost"
-        size="icon"
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-gray-700 hover:text-gray-900"
-        onClick={previousVideo}
-        aria-label="Previous video"
+    <div className="w-full overflow-hidden">
+      <div 
+        ref={scrollRef}
+        className="flex"
+        style={{
+          width: `${videoWidth * (videos.length + 1)}px`,
+        }}
       >
-        <ChevronLeft className="h-8 w-8" />
-      </Button>
-      
-      <div className="aspect-video flex justify-center items-center bg-gray-100">
-        <div style={{width: "40rem"}}> {/* 16:9 aspect ratio width for 480p */}
-          <YouTubeEmbed
-            videoid={videos[currentIndex].id}
-            height="100%"
-            width="100%"
-            params="rel=0"
-          />
-        </div>
-      </div>
-
-      <Button
-        variant="ghost"
-        size="icon"
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-gray-700 hover:text-gray-900"
-        onClick={nextVideo}
-        aria-label="Next video"
-      >
-        <ChevronRight className="h-8 w-8" />
-      </Button>
-
-      <div className="text-center mt-6">
-        <h2 className="text-2xl font-bold text-gray-900">{videos[currentIndex].title}</h2>
+        {videos.map((video, index) => (
+          <div key={`${video.id}-${index}`} className="flex-shrink-0 px-2" style={{ width: `${videoWidth}px` }}>
+            <div className="aspect-video">
+              <YouTubeEmbed
+                videoid={video.id}
+                height="100%"
+                width="100%"
+                params="rel=0"
+              />
+            </div>
+            <h2 className="mt-2 text-sm font-medium text-gray-900 line-clamp-2">{video.title}</h2>
+          </div>
+        ))}
       </div>
     </div>
   )
 }
+
