@@ -36,14 +36,14 @@ export default function ServicePage() {
               </p>
               <div className="flex justify-center gap-12 mt-8">
                 <Image
-                  src="/jr-east-logo.png"
+                  src="/13.png"
                   alt="JR East Logo"
                   width={200}
                   height={200}
                   className="object-contain"
                 />
                 <Image
-                  src="/meoha-tok-logo.png"
+                  src="/12.png"
                   alt="Meoha-tok Logo"
                   width={200}
                   height={80}
@@ -74,7 +74,7 @@ export default function ServicePage() {
               </h3>
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <Image
-                  src="/sns-examples.png"
+                  src="/8.png"
                   alt="SNS Examples"
                   width={600}
                   height={400}
@@ -115,7 +115,7 @@ export default function ServicePage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <Card className="p-6 space-y-4">
                   <Image
-                    src="/youtuber-development.png"
+                    src="/11.png"
                     alt="Youtuber Development"
                     width={400}
                     height={300}
@@ -130,7 +130,7 @@ export default function ServicePage() {
 
                 <Card className="p-6 space-y-4">
                   <Image
-                    src="/ai-channel.png"
+                    src="/1.png"
                     alt="AI Channel Management"
                     width={400}
                     height={300}
@@ -144,7 +144,7 @@ export default function ServicePage() {
 
                 <Card className="p-6 space-y-4">
                   <Image
-                    src="/inbound-channel.png"
+                    src="/2.png"
                     alt="Inbound Channel"
                     width={400}
                     height={300}
@@ -158,7 +158,7 @@ export default function ServicePage() {
 
                 <Card className="p-6 space-y-4">
                   <Image
-                    src="/travel-agency.png"
+                    src="/3.png"
                     alt="Travel Agency"
                     width={400}
                     height={300}
