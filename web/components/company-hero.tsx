@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 
 export function CompanyHero() {
@@ -8,13 +7,7 @@ export function CompanyHero() {
     <div className="relative h-screen overflow-hidden">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0">
-        <Image
-          src="/tokyo-skyline.jpg"
-          alt="Tokyo skyline"
-          fill
-          className="object-cover"
-          priority
-        />
+        
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-cyan-400/80" />
         
@@ -89,7 +82,7 @@ export function CompanyHero() {
           transition={{ duration: 1, delay: 0.7 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-left lg:text-right">
-            SNSフォロワー総数40万人
+            月刊再生回数3000万回
           </h2>
           <p className="text-xl md:text-2xl text-white text-left lg:text-right max-w-2xl">
           地理や歴史に絡めて旅行したくなるような動画をショート動画中心に作成。
