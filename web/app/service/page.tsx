@@ -53,8 +53,8 @@ export default function ServicePage() {
                     <Image
                       src="/13.png"
                       alt="JR East Logo"
-                      width={120}
-                      height={200}
+                      width={150}
+                      height={150}
                       className="object-contain"
                     />
                     <Image
