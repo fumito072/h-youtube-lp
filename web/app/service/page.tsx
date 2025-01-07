@@ -199,6 +199,46 @@ export default function ServicePage() {
             </Card>
           </AnimatedSection>
 
+          <AnimatedSection direction="right">
+            <Card className="p-8 bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm">
+              <CardHeader>
+                <div className="flex justify-between items-start mb-8">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white text-xl font-bold">
+                      4
+                    </div>
+                    <CardTitle className="text-3xl text-white">ウェブサイト作成事業</CardTitle>
+                  </div>
+                  <div className="text-xl text-blue-300">Forever Amusement Inc.</div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-8">
+                  <h3 className="text-2xl font-bold text-center text-blue-200">
+                    お客様のニーズに合わせた最適なウェブサイトを制作
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <Image
+                      src="/web-site.png"
+                      alt="Website Creation Examples"
+                      width={600}
+                      height={400}
+                      className="rounded-lg"
+                    />
+                    <div className="space-y-4">
+                      <h4 className="text-2xl font-bold text-emerald-400">ウェブサイトで事業の可能性を広げる</h4>
+                      <p className="text-lg leading-relaxed text-gray-300">
+                        モダンな技術とデザインで、スマートフォンにも最適化された高品質なウェブサイトを制作します。
+                        コーポレートサイトから、ECサイト、ランディングページまで、幅広いニーズにお応えします。
+                        弊社が制作した<a href="https://main.dlflvcz3ifacg.amplifyapp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100 underline">ウェブサイトの実例</a>をご覧ください。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </AnimatedSection>
+
           {/* Case Studies Section */}
           <section className="pt-20">
             <CaseStudies />
