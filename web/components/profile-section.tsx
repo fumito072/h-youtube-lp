@@ -7,7 +7,7 @@ export default function ProfileSection() {
                 <ProfileCard  
                     title = "代表取締役社長"
                     nameJp = "松永陽太郎"
-                    nameEn = "Youtarou Matsunaga"
+                    nameEn = "Yotaro Matsunaga"
                     description = {[
                         "大学在学中からクリエイター活動を開始。",
                         "初期はUber eatsの配達を全国で行う動画を配信。",
