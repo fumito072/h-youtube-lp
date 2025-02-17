@@ -19,19 +19,13 @@ export function ContactForm() {
     message: ''
   })
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-  }
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form action='https://formspree.io/f/mvgzvkrz' className="space-y-6" method='POST'>
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-1">
           お名前 <span className="text-red-500">*</span>
