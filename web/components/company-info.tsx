@@ -18,8 +18,8 @@ export function CompanyInfo() {
                 <div className="font-medium">会社名</div>
                 <div>Forever Amusement Inc.</div>
                 
-                <div className="font-medium">設立</div>
-                <div>設立準備中</div>
+                {/* <div className="font-medium">設立</div>
+                <div>設立準備中</div> */}
                 
                 <div className="font-medium">代表取締役</div>
                 <div>松永 陽太郎</div>
