@@ -143,7 +143,7 @@ export default function Page() {
               initial={{ y: 40, opacity: 0 }}
               animate={{ y: 20, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="absolute right-24 md:right-32 top-10 md:top-20"
+              className="absolute right-24 md:right-32 top-20 md:top-32"
             >
               <Image
                 src="/1.png"
