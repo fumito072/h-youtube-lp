@@ -24,6 +24,13 @@ export function ContactForm() {
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    })
+  }
+
   return (
     <form action='https://formspree.io/f/mvgzvkrz' className="space-y-6" method='POST'>
       <div>
@@ -103,6 +110,7 @@ export function ContactForm() {
       <button
         type="submit"
         className="w-full bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition-colors"
+        onClick={handleSubmit}
       >
         送信する
       </button>
