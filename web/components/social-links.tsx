@@ -14,7 +14,7 @@ export function SocialLinks() {
         <Youtube className="w-6 h-6 filter drop-shadow-[0_0_2px_rgba(239,68,68,0.7)]" />
         <span className="sr-only">YouTube</span>
       </Link>
-      <Link href="https://www.instagram.com/yotaro_japantravel?igsh=cHdmbHBnemZ0Njd1" className="text-pink-500 hover:text-pink-400 transition-colors duration-200">
+      <Link href="https://www.instagram.com/yotaro_education?igsh=cGwwOTkxanN6dGhk&utm_source=qr" className="text-pink-500 hover:text-pink-400 transition-colors duration-200">
         <Instagram className="w-6 h-6 filter drop-shadow-[0_0_2px_rgba(236,72,153,0.7)]" />
         <span className="sr-only">Instagram</span>
       </Link>
@@ -22,7 +22,7 @@ export function SocialLinks() {
         <Twitter className="w-6 h-6 filter drop-shadow-[0_0_2px_rgba(59,130,246,0.7)]" />
         <span className="sr-only">Twitter</span>
       </Link>
-      <Link href="https://www.tiktok.com/@yotaro_travel?_t=ZS-8stvGO2QNeb&_r=1" className="text-gray hover:text-gray-800 transition-colors duration-200">
+      <Link href="https://www.tiktok.com/@yotaro_education?_t=ZS-8vpcz9hGvv5&_r=1" className="text-gray hover:text-gray-800 transition-colors duration-200">
         <TikTokIcon className="w-6 h-6 filter drop-shadow-[0_0_2px_rgba(0,0,0,0.7)]" />
         <span className="sr-only">TikTok</span>
       </Link>

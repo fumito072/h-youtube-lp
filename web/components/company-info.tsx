@@ -25,7 +25,7 @@ export function CompanyInfo() {
                 <div>松永 陽太郎</div>
                 
                 <div className="font-medium">所在地</div>
-                <div>港区六本木</div>
+                <div>東京都港区六本木</div>
                 
                 <div className="font-medium">事業内容</div>
                 <div className="space-y-2">
