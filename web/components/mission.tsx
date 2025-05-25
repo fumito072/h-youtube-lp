@@ -12,7 +12,7 @@ export function Mission() {
         transition={{ duration: 0.8 }}
       >
         <h2 className="text-3xl font-bold mb-4 md:mb-0">私たちについて</h2>
-        <p className="text-xl text-emerald-600">Forever Amusement Inc.</p>
+        <p className="text-xl text-emerald-600">Forever Amusement</p>
       </motion.div>
 
       <div className="text-center space-y-12">

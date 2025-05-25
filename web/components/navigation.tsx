@@ -40,12 +40,12 @@ export function Navigation() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
-                alt="Forever Amusement Inc. logo"
+                alt="Forever Amusement logo"
                 width={64}
                 height={64}
                 className="mr-2"
               />
-              <span className="text-xl font-bold tracking-wider">Forever Amusement Inc.</span>
+              <span className="text-xl font-bold tracking-wider">Forever Amusement </span>
             </Link>
           </div>
           <div className="hidden md:flex space-x-8">

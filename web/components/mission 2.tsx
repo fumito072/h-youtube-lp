@@ -3,7 +3,7 @@ export function Mission() {
       <section className="max-w-4xl mx-auto px-4 py-16 text-gray-900">
         <div className="flex justify-between items-start mb-16">
           <h2 className="text-3xl font-bold">私たちについて</h2>
-          <p className="text-xl">Forever Amusement Inc.</p>
+          <p className="text-xl">Forever Amusement</p>
         </div>
   
         <div className="text-center space-y-12">

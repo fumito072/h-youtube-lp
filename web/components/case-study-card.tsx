@@ -39,7 +39,7 @@ export function CaseStudyCard({
               <h3 className="text-2xl font-bold text-white">{title}</h3>
             </div>
           )}
-          <div className="text-xl text-blue-300">Forever Amusement Inc.</div>
+          <div className="text-xl text-blue-300">Forever Amusement</div>
         </div>
       </CardHeader>
       <CardContent className="p-8 h-full flex flex-col">
