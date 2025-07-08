@@ -35,7 +35,7 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">商品PR・広告事業</CardTitle>
                   </div>
-                  <div className="text-xl text-blue-300">Forever Amusement</div>
+                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>
@@ -81,7 +81,7 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">SNS運用代行</CardTitle>
                   </div>
-                  <div className="text-xl text-blue-300">Forever Amusement</div>
+                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>
@@ -122,7 +122,7 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">新規企画開発事業</CardTitle>
                   </div>
-                  <div className="text-xl text-blue-300">Forever Amusement</div>
+                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>
@@ -209,7 +209,7 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">ウェブサイト作成事業</CardTitle>
                   </div>
-                  <div className="text-xl text-blue-300">Forever Amusement</div>
+                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>
