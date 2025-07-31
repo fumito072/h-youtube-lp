@@ -87,7 +87,7 @@ export function CompanyHero() {
           <p className="text-xl md:text-2xl text-white text-left lg:text-right max-w-2xl">
           地理や歴史に絡めて旅行したくなるような動画をショート動画中心に作成。
           全て自ら原稿を書いて撮影しております。
-          また1つの動画あたり平均10万再生されており月の合計再生数は3000万回を超えております。
+          また1つの動画あたり平均10万再生されており月の合計再生数は7000万回を超えております。
           </p>
         </motion.div>
       </div>
