@@ -82,7 +82,7 @@ export function CompanyHero() {
           transition={{ duration: 1, delay: 0.7 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-left lg:text-right">
-            月刊再生回数3000万回
+            月刊再生回数7000万回
           </h2>
           <p className="text-xl md:text-2xl text-white text-left lg:text-right max-w-2xl">
           地理や歴史に絡めて旅行したくなるような動画をショート動画中心に作成。
