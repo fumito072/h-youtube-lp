@@ -16,13 +16,16 @@ export function CompanyInfo() {
               <h2 className="text-3xl font-bold text-gray-900">会社概要</h2>
               <div className="grid grid-cols-1 md:grid-cols-[200px,1fr] gap-4 text-gray-800">
                 <div className="font-medium">会社名</div>
-                <div>Forever Amusement</div>
+                <div>株式会社 Forever Amusement</div>
                 
                 {/* <div className="font-medium">設立</div>
                 <div>設立準備中</div> */}
                 
                 <div className="font-medium">代表取締役</div>
                 <div>松永 陽太郎</div>
+
+                <div className="font-medium">資本金</div>
+                <div>100万円</div>
                 
                 <div className="font-medium">所在地</div>
                 <div>東京都渋谷区代々木3丁目33-10</div>
