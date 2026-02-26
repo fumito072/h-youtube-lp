@@ -16,7 +16,7 @@ export function CompanyInfo() {
               <h2 className="text-3xl font-bold text-gray-900">会社概要</h2>
               <div className="grid grid-cols-1 md:grid-cols-[200px,1fr] gap-4 text-gray-800">
                 <div className="font-medium">会社名</div>
-                <div>株式会社 Forever Amusement</div>
+                <div>Forever Amusement 株式会社</div>
                 
                 {/* <div className="font-medium">設立</div>
                 <div>設立準備中</div> */}
