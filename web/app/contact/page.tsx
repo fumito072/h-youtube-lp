@@ -15,10 +15,10 @@ export default function ContactPage() {
           {/* SNS運用代行のお問い合わせフォーム */}
           <div className="mb-24">
             <h2 className="text-3xl text-gray-900 mb-4">
-              SNS運用代行に関するお問い合わせ
+              よーたろ 顧問サービス 打ち合わせ
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              SNS運用代行につきましては、以下のリンクからフォームにアクセスしてください。
+              よーたろ顧問サービスにつきましては、以下のリンクからフォームにアクセスしてください。
             </p>
             <Link
               href="https://forms.gle/RFrESTLdigKc9PQp6"
@@ -26,17 +26,17 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300"
             >
-              SNS運用代行お問い合わせフォームへ
+              よーたろ顧問サービスお問い合わせフォームへ
             </Link>
           </div>
 
           {/* YouTube スポンサー広告のお問い合わせフォーム */}
           <div className="mb-24">
             <h2 className="text-3xl text-gray-900 mb-4">
-              再生2円よーたろYouTube スポンサー広告
+              よーたろSNS PR/スポンサー広告
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              YouTube スポンサー広告に関するお問い合わせは、以下のリンクからフォームにアクセスしてください。
+              よーたろSNS PR/スポンサー広告に関するお問い合わせは、以下のリンクからフォームにアクセスしてください。
             </p>
             <Link
               href="https://forms.gle/j3naS6XRRQs3dmZ49"
@@ -44,7 +44,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="inline-block bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300"
             >
-              YouTube スポンサー広告お問い合わせフォームへ
+              よーたろSNS PR/スポンサー広告お問い合わせフォームへ
             </Link>
           </div>
 
