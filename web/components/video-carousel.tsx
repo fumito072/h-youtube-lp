@@ -5,42 +5,51 @@ import { YouTubeEmbed } from '@next/third-parties/google'
 
 const videos = [
   {
-    id: 'KbwqgnZTvpE',
-    title: '日本がインドネシアに絶縁宣言！高速鉄道でついにやり返したこととは何なのか？！',
+    id: 'VVsAXfTw-VM',
+    title: '【裏切り】高市内閣を内側から破壊するかもしれない自民党大物議員 5選',
+    duration: 1085,
   },
   {
-    id: 'Gd1_s9xNWpI',
-    title: 'なぜ死者数世界一のヴィクトリア湖は毎年5000人もなくなるのか？',
+    id: 'i73KkGycCHs',
+    title: '【凄すぎwww】高市さんが既に仲良くなっている超重要大国 5選',
+    duration: 948,
   },
   {
-    id: 'nDJjiDAhypU',
-    title: '日本に頼んだイタリア鉄道と中国に頼んだチェコ鉄道の末路がヤバすぎた…',
+    id: 'H7wFzaG66SM',
+    title: '高市総理誕生した瞬間に日本で大変化する５つのこと',
+    duration: 1216,
   },
   {
-    id: "M_apHd1-dxk",
-    title: "【1位ブッチギリ】今後最も人口が減る都道府県 TOP10…！"
+    id: 'niaYl83hAvU',
+    title: 'アパホテルの創業社長が亡くなってしまった、今後ホテル経営はどうなっていくのか？',
+    duration: 735,
   },
   {
-    id: "hzItoB51w9E",
-    title: "hzItoB51w9E"
+    id: 'txEWQ3w7bgo',
+    title: '創価学会の比率が滅茶苦茶多い都道府県 TOP10',
+    duration: 743,
   },
   {
-    id: "6_SgKoMqRZ8",
-    title: "日本と組んだテキサス新幹線と中国と組んだカリフォルニア新幹線の末路。"
+    id: 'donj0uZa3nM',
+    title: '自民党が300議席獲得し中道が崩壊しそうなのでその後の政治変化予測がやばすぎます…',
+    duration: 1028,
   },
   {
-    id: "h7pqkz6oLJk",
-    title: "夜行バスに大阪～東京で乗ったら運転手が大激怒でヤバすぎた"
+    id: '0iDQY7QUSdU',
+    title: '【落選】高市旋風により消滅した立憲超大物議員 TOP7',
+    duration: 955,
   },
   {
-    id: "zXkF3HJyAcQ",
-    title: "【絶望】なぜ京都市は10年以内に財政破綻するのか"
-  }
+    id: 'Zlk2de1_dxI',
+    title: 'ヨーロッパに実在する「ネズミ講で財政破綻」した国の末路。',
+    duration: 1119,
+  },
 ]
 
 export function VideoCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [videoWidth, setVideoWidth] = useState(320) // Default width
+  const displayVideos = videos.filter((video) => video.duration >= 180)
 
   useEffect(() => {
     const scrollContainer = scrollRef.current
@@ -74,10 +83,10 @@ export function VideoCarousel() {
         ref={scrollRef}
         className="flex"
         style={{
-          width: `${videoWidth * (videos.length + 1)}px`,
+          width: `${videoWidth * (displayVideos.length + 1)}px`,
         }}
       >
-        {videos.map((video, index) => (
+        {displayVideos.map((video, index) => (
           <div key={`${video.id}-${index}`} className="flex-shrink-0 px-2" style={{ width: `${videoWidth}px` }}>
             <div className="aspect-video">
               <YouTubeEmbed
