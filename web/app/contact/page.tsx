@@ -31,7 +31,7 @@ export default function ContactPage() {
           </div>
 
           {/* YouTube スポンサー広告のお問い合わせフォーム */}
-          <div className="mb-24">
+          <div id="sponsor-pr" className="mb-24">
             <h2 className="text-3xl text-gray-900 mb-4">
               よーたろSNS PR/スポンサー広告
             </h2>
