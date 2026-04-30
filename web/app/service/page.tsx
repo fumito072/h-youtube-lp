@@ -7,19 +7,19 @@ import { Space } from 'lucide-react'
 
 import GeometricAnimation from "@/components/GeometricAnimation"
 import { AnimatedSection } from "@/components/AnimatedSection"
-import { AchievementSection, ServiceApproachSection } from "@/components/website-sections"
+import { AchievementSection, ServiceOverviewSection } from "@/components/website-sections"
 
 export const metadata: Metadata = {
   title: "サービス",
   description:
-    "Forever Amusement（フォーエバーアミューズメント）の商品PR・広告、SNS運用代行、新規企画開発、Webサイト制作サービスをご紹介します。",
+    "Forever Amusement（フォーエバーアミューズメント）のよーたろch PR、経営者ブランディング、チームコーチング、商品PR・Web制作サービスをご紹介します。",
   alternates: {
     canonical: "/service",
   },
   openGraph: {
     title: "サービス｜Forever Amusement",
     description:
-      "代表よーたろのクリエイター活動を活かしたSNS PR、広告、SNS運用代行、事業開発支援のサービス内容です。",
+      "代表よーたろのクリエイター活動を活かしたPR、経営者ブランディング、チームコーチング、制作支援のサービス内容です。",
     url: "/service",
   },
 }
@@ -41,9 +41,9 @@ export default function ServicePage() {
         <Navigation />
         <Space className="w-full h-20" />
         <div className="container mx-auto px-4 py-12 space-y-24">
-          <ServiceApproachSection />
+          <ServiceOverviewSection />
 
-          {/* Section 1: Product PR */}
+          {/* Section 1: Yotaro Channel PR */}
           <AnimatedSection direction="left">
             <Card className="p-8 bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm">
               <CardHeader>
@@ -52,7 +52,7 @@ export default function ServicePage() {
                     <div className="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white text-xl font-bold">
                       1
                     </div>
-                    <CardTitle className="text-3xl text-white">商品PR・広告事業</CardTitle>
+                    <CardTitle className="text-3xl text-white">よーたろch PRプラン</CardTitle>
                   </div>
                   <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
@@ -60,13 +60,12 @@ export default function ServicePage() {
               <CardContent>
                 <div className="space-y-8">
                   <h3 className="text-2xl font-bold text-center text-blue-200">
-                    クリエイター活動に絡めた商品PRが可能
+                    代表メディアを活用し、決裁者層へ直接リーチ
                   </h3>
                   <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-300">
-                    クリエイター活動で築いてきたノウハウを存分に活用して、視聴者が実際に「使ってみたい」
-                    「行ってみたい」を思えるような動画を作成します。
-                    またよーたろ自身が使いたいと思う商品を厳選して視聴者にお届けしている為、
-                    視聴回数・お申し込み回数共にクライアント様の期待値を超える成果をお届けしております。
+                    総フォロワー60万人の「よーたろch」を通じて、商品やサービスを自然な文脈で紹介します。
+                    視聴者が実際に「使ってみたい」「行ってみたい」と感じられる企画に落とし込み、
+                    認知拡大から問い合わせ・購買につながるPRを設計します。
                   </p>
                   <div className="flex justify-center gap-12 mt-8">
                     <Image
@@ -89,7 +88,7 @@ export default function ServicePage() {
             </Card>
           </AnimatedSection>
 
-          {/* Section 2: SNS Management */}
+          {/* Section 2: Executive Branding */}
           <AnimatedSection direction="right">
             <Card className="p-8 bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm">
               <CardHeader>
@@ -98,7 +97,7 @@ export default function ServicePage() {
                     <div className="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white text-xl font-bold">
                       2
                     </div>
-                    <CardTitle className="text-3xl text-white">SNS運用代行</CardTitle>
+                    <CardTitle className="text-3xl text-white">経営者ブランディング</CardTitle>
                   </div>
                   <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
@@ -106,7 +105,7 @@ export default function ServicePage() {
               <CardContent>
                 <div className="space-y-8">
                   <h3 className="text-2xl font-bold text-center text-blue-200">
-                    SNSの運用を様々なニーズに合わせて支援します。
+                    経営者自身の発信を、採用・営業・信頼構築につなげる
                   </h3>
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                     <Image
@@ -117,11 +116,10 @@ export default function ServicePage() {
                       className="rounded-lg"
                     />
                     <div className="space-y-4">
-                      <h4 className="text-2xl font-bold text-emerald-400">SNS活用で認知力を向上</h4>
+                      <h4 className="text-2xl font-bold text-emerald-400">思想・専門性・事業の強みを伝える</h4>
                       <p className="text-lg leading-relaxed text-gray-300">
-                        SNSを活用し、定期的な投稿を実施。
-                        認知拡大とファンを増加させます。
-                        アカウントがない場合は、新規作成も代理で行いますので、安心しておまかせください。
+                        ターゲット分析、ポジショニング、台本制作、撮影ディレクションまで支援します。
+                        経営者の知見や価値観をコンテンツ化し、採用・営業・投資家向けの信頼形成を加速させます。
                       </p>
                     </div>
                   </div>
@@ -130,7 +128,7 @@ export default function ServicePage() {
             </Card>
           </AnimatedSection>
 
-          {/* Section 3: New Business Development */}
+          {/* Section 3: Team Coaching */}
           <AnimatedSection direction="left">
             <Card className="p-8 bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm">
               <CardHeader>
@@ -139,7 +137,7 @@ export default function ServicePage() {
                     <div className="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white text-xl font-bold">
                       3
                     </div>
-                    <CardTitle className="text-3xl text-white">新規企画開発事業</CardTitle>
+                    <CardTitle className="text-3xl text-white">チームコーチング</CardTitle>
                   </div>
                   <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
@@ -147,71 +145,41 @@ export default function ServicePage() {
               <CardContent>
                 <div className="space-y-8">
                   <h3 className="text-2xl font-bold text-center text-blue-200">
-                    ミッション実現の為、日夜新たな企画へチャレンジ
+                    複数メンバーで継続できるSNS運用体制を作る
                   </h3>
                   
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <Card className="p-6 space-y-4 bg-opacity-60 bg-gray-800">
-                      <Image
-                        src="/11.png"
-                        alt="Youtuber Development"
-                        width={400}
-                        height={300}
-                        className="rounded-lg"
-                      />
-                      <CardTitle className="text-xl text-center text-blue-300">Youtuber育成</CardTitle>
+                      <CardTitle className="text-xl text-center text-blue-300">週次コーチング</CardTitle>
                       <p className="text-sm text-gray-300">
-                        これまでの経験を元に伸びるアカウントをプロデュースする企画。
-                        第1弾で実容系Youtuberを育成。第2弾で筋トレ×大変身でYoutuberを育成する。
+                        発信者ごとに課題を整理し、台本・撮影・編集・投稿の改善点を継続的にフィードバックします。
                       </p>
                     </Card>
 
                     <Card className="p-6 space-y-4 bg-opacity-60 bg-gray-800">
-                      <Image
-                        src="/1.png"
-                        alt="AI Channel Management"
-                        width={400}
-                        height={300}
-                        className="rounded-lg"
-                      />
-                      <CardTitle className="text-xl text-center text-blue-300">AI活用したチャンネル運用</CardTitle>
+                      <CardTitle className="text-xl text-center text-blue-300">編集ガイドライン</CardTitle>
                       <p className="text-sm text-gray-300">
-                        生成AIを活用した台本から編集までを一気通貫したチャンネル運用を構築中。再現性あり且つコスト低い運用をハック中。
+                        誰が担当しても一定品質を保てるように、ブランドトーンや編集基準を整備します。
                       </p>
                     </Card>
 
                     <Card className="p-6 space-y-4 bg-opacity-60 bg-gray-800">
-                      <Image
-                        src="/2.png"
-                        alt="Inbound Channel"
-                        width={400}
-                        height={300}
-                        className="rounded-lg"
-                      />
-                      <CardTitle className="text-xl text-center text-blue-300">インバウンド向けチャンネル</CardTitle>
+                      <CardTitle className="text-xl text-center text-blue-300">営業導線設計</CardTitle>
                       <p className="text-sm text-gray-300">
-                        円安が高まる中インバウンド向けのチャンネルを開設。日本人市場のみならず海外でマーケットも支援ができる体制を構築中。
+                        SNSで獲得した認知を、問い合わせ・商談・成約につなげる導線まで設計します。
                       </p>
                     </Card>
 
                     <Card className="p-6 space-y-4 bg-opacity-60 bg-gray-800">
-                      <Image
-                        src="/3.png"
-                        alt="Travel Agency"
-                        width={400}
-                        height={300}
-                        className="rounded-lg"
-                      />
-                      <CardTitle className="text-xl text-center text-blue-300">旅行代理店</CardTitle>
+                      <CardTitle className="text-xl text-center text-blue-300">運用体制設計</CardTitle>
                       <p className="text-sm text-gray-300">
-                        視聴者を動画からリアルな活動へ行動変容させる旅行代理店企画。
-                        過去には視聴者向けのバスツアー企画なども開催し計100名を集客。
+                        KPI設計、投稿管理、分析レポートまで、社内で回るワークフローを作ります。
                       </p>
                     </Card>
                   </div>
 
                   <p className="text-center text-lg mt-8 text-blue-200">
-                    ※新企画へのスポンサードや連携などのご相談も受付中です。
+                    個人依存ではなく、組織全体に発信力を残すための支援です。
                   </p>
                 </div>
               </CardContent>
@@ -226,7 +194,7 @@ export default function ServicePage() {
                     <div className="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white text-xl font-bold">
                       4
                     </div>
-                    <CardTitle className="text-3xl text-white">ウェブサイト作成事業</CardTitle>
+                    <CardTitle className="text-3xl text-white">商品PR・Web制作</CardTitle>
                   </div>
                   <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
@@ -234,7 +202,7 @@ export default function ServicePage() {
               <CardContent>
                 <div className="space-y-8">
                   <h3 className="text-2xl font-bold text-center text-blue-200">
-                    お客様のニーズに合わせた最適なウェブサイトを制作
+                    PR動画・SNS運用・Web制作まで実行支援
                   </h3>
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                     <Image
@@ -245,10 +213,10 @@ export default function ServicePage() {
                       className="rounded-lg"
                     />
                     <div className="space-y-4">
-                      <h4 className="text-2xl font-bold text-emerald-400">ウェブサイトで事業の可能性を広げる</h4>
+                      <h4 className="text-2xl font-bold text-emerald-400">発信から受け皿まで整える</h4>
                       <p className="text-lg leading-relaxed text-gray-300">
-                        モダンな技術とデザインで、スマートフォンにも最適化された高品質なウェブサイトを制作します。
-                        コーポレートサイトから、ECサイト、ランディングページまで、幅広いニーズにお応えします。
+                        商品PR動画やSNS運用だけでなく、問い合わせにつながるWebサイトやLPの制作まで対応します。
+                        認知を取る施策と、受け皿となる導線をセットで整えることで、事業成果につながる状態を作ります。
                         弊社が制作した<a href="https://main.dlflvcz3ifacg.amplifyapp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100 underline">ウェブサイトの実例</a>をご覧ください。
                       </p>
                     </div>

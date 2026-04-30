@@ -76,8 +76,8 @@ export function HomeIntegrationSections() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeading
             label="SERVICE"
-            title="発信力を事業成長につなげる"
-            description="外部PRで短期の認知を取りにいく施策と、社内に発信力を残す中長期支援を組み合わせます。"
+            title="4つのサービスで発信力を事業成長につなげる"
+            description="よーたろch PR、経営者ブランディング、チームコーチング、商品PR・Web制作を目的に合わせて組み合わせます。"
           />
           <Link
             href="/service"
@@ -110,16 +110,16 @@ export function HomeIntegrationSections() {
   );
 }
 
-export function ServiceApproachSection() {
+export function ServiceOverviewSection() {
   return (
     <section
-      id="service-approach"
+      id="service-overview"
       className="space-y-10 rounded-2xl border border-gray-200 bg-white/95 p-6 text-gray-900 shadow-xl shadow-slate-900/10 md:p-8"
     >
       <SectionHeading
-        label="SERVICE MODEL"
-        title="2つのアプローチで支援します"
-        description="代表メディアを活用した外部PRと、経営者・チームの発信力を育てる内部強化を、目的に合わせて設計します。"
+        label="SERVICE"
+        title="4つのサービスで発信力を事業成長につなげる"
+        description="トップページと同じ4分類を軸に、短期の認知拡大から中長期の内製化、制作支援まで一貫して設計します。"
         theme="light"
       />
 
@@ -135,36 +135,21 @@ export function ServiceApproachSection() {
         ))}
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-2">
-        <div id="pr-plan" className="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <p className="text-sm font-bold text-blue-700">Approach A</p>
-          <h3 className="mt-2 text-2xl font-bold text-gray-950">よーたろch PRプラン</h3>
-          <p className="mt-4 text-sm leading-relaxed text-gray-700">
-            60万フォロワーの代表メディアを通じて、決裁者層へ直接届けます。
-            商品PRやサービス認知を短期で伸ばしたい場合に向いています。
-          </p>
-          <div className="mt-6 grid gap-3 text-gray-800">
-            <CheckItem>視聴者の35%が経営者・役員</CheckItem>
-            <CheckItem>34〜54歳のミドル世代が中心</CheckItem>
-            <CheckItem>3媒体合計で月間3,000万再生</CheckItem>
-            <CheckItem>単発PR、6回パッケージに対応</CheckItem>
-          </div>
-        </div>
-
-        <div id="sns-coaching" className="rounded-lg border border-emerald-200 bg-emerald-50 p-6">
-          <p className="text-sm font-bold text-emerald-700">Approach B</p>
-          <h3 className="mt-2 text-2xl font-bold text-gray-950">SNS運用・戦略支援</h3>
-          <p className="mt-4 text-sm leading-relaxed text-gray-700">
-            経営者や社員が発信できる体制を作り、外注ではなく組織に残る
-            「発信力」という資産を育てます。
-          </p>
-          <div className="mt-6 grid gap-3 text-gray-800">
-            <CheckItem>経営者ブランディングの戦略設計</CheckItem>
-            <CheckItem>台本制作・撮影ディレクション</CheckItem>
-            <CheckItem>チーム育成と編集レビュー</CheckItem>
-            <CheckItem>営業・クロージングまでの導線設計</CheckItem>
-          </div>
-        </div>
+      <div className="grid gap-5 md:grid-cols-2">
+        {serviceCards.map((service) => (
+          <article key={service.title} className="rounded-lg border border-gray-200 bg-gray-50 p-6">
+            <p className="text-sm font-bold text-blue-700">{service.label}</p>
+            <h3 className="mt-2 text-2xl font-bold text-gray-950">{service.title}</h3>
+            <p className="mt-4 text-sm leading-relaxed text-gray-700">
+              {service.description}
+            </p>
+            <div className="mt-6 grid gap-3 text-gray-800">
+              {service.points.map((point) => (
+                <CheckItem key={point}>{point}</CheckItem>
+              ))}
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
