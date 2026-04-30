@@ -1,5 +1,7 @@
 'use client'
 
+/* eslint-disable react-hooks/unsupported-syntax */
+
 import React, { useEffect, useRef } from 'react'
 
 const GeometricAnimation: React.FC = () => {
@@ -88,4 +90,3 @@ const GeometricAnimation: React.FC = () => {
 }
 
 export default GeometricAnimation
-

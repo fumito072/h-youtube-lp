@@ -1,6 +1,22 @@
+import type { Metadata } from "next"
 import { ContactForm } from "@/components/contact-form"
 import { Navigation } from "@/components/navigation"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "お問い合わせ",
+  description:
+    "Forever Amusement（フォーエバーアミューズメント）へのお問い合わせページです。よーたろ顧問サービス、SNS PR、スポンサー広告のご相談はこちらから。",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "お問い合わせ｜Forever Amusement",
+    description:
+      "Forever Amusement株式会社へのお問い合わせ、代表よーたろの顧問サービスやSNS PR・スポンサー広告に関するご相談はこちら。",
+    url: "/contact",
+  },
+}
 
 export default function ContactPage() {
   return (
@@ -63,4 +79,3 @@ export default function ContactPage() {
     </main>
   )
 }
-

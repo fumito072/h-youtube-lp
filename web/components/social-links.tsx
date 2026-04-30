@@ -1,4 +1,4 @@
-import { Youtube, Instagram, Twitter, Facebook, Rss } from 'lucide-react'
+import { Youtube, Instagram, Twitter } from 'lucide-react'
 import Link from "next/link"
 
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -29,4 +29,3 @@ export function SocialLinks() {
     </div>
   )
 }
-

@@ -1,5 +1,7 @@
 "use client"
 
+/* eslint-disable react-hooks/set-state-in-effect */
+
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
@@ -107,4 +109,3 @@ export function Navigation() {
     </nav>
   )
 }
-

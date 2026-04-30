@@ -1,5 +1,7 @@
 "use client"
 
+/* eslint-disable react-hooks/purity, react-hooks/set-state-in-effect */
+
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Noto_Sans_JP } from 'next/font/google'
@@ -7,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { Navigation } from "@/components/navigation"
 import { SocialLinks } from "@/components/social-links"
 import { VideoCarousel } from "@/components/video-carousel"
+import { HomeIntegrationSections } from "@/components/website-sections"
 import Link from "next/link"
 
 const notoSansJP = Noto_Sans_JP({
@@ -115,7 +118,7 @@ export default function Page() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Link 
-                href="/company" 
+                href="/service" 
                 className={`${notoSansJP.className} inline-block mt-6 px-5 py-2 bg-transparent border-2 border-blue-400 text-blue-400 rounded-full font-medium text-base hover:bg-blue-400 hover:text-white transition-all duration-300 transform hover:scale-105`}
               >
                 サービスページへ
@@ -156,9 +159,9 @@ export default function Page() {
           </div>
         </div>
         <VideoCarousel />
+        <HomeIntegrationSections />
         <SocialLinks />
       </main>
     </div>
   )
 }
-

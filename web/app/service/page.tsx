@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CaseStudies } from "../../components/ui/case-studies"
@@ -6,6 +7,22 @@ import { Space } from 'lucide-react'
 
 import GeometricAnimation from "@/components/GeometricAnimation"
 import { AnimatedSection } from "@/components/AnimatedSection"
+import { AchievementSection, ServiceApproachSection } from "@/components/website-sections"
+
+export const metadata: Metadata = {
+  title: "サービス",
+  description:
+    "Forever Amusement（フォーエバーアミューズメント）の商品PR・広告、SNS運用代行、新規企画開発、Webサイト制作サービスをご紹介します。",
+  alternates: {
+    canonical: "/service",
+  },
+  openGraph: {
+    title: "サービス｜Forever Amusement",
+    description:
+      "代表よーたろのクリエイター活動を活かしたSNS PR、広告、SNS運用代行、事業開発支援のサービス内容です。",
+    url: "/service",
+  },
+}
 
 export default function ServicePage() {
   return (
@@ -24,6 +41,8 @@ export default function ServicePage() {
         <Navigation />
         <Space className="w-full h-20" />
         <div className="container mx-auto px-4 py-12 space-y-24">
+          <ServiceApproachSection />
+
           {/* Section 1: Product PR */}
           <AnimatedSection direction="left">
             <Card className="p-8 bg-opacity-80 bg-gray-900 backdrop-filter backdrop-blur-sm">
@@ -240,6 +259,8 @@ export default function ServicePage() {
           </AnimatedSection>
 
           {/* Case Studies Section */}
+          <AchievementSection theme="light" />
+
           <section className="pt-20">
             <CaseStudies />
           </section>
@@ -248,4 +269,3 @@ export default function ServicePage() {
     </div>
   )
 }
-

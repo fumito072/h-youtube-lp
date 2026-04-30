@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 /** 
  * OPTIONS ハンドラ（CORS プリフライトリクエスト対応）
  */
-export async function OPTIONS(request: Request) {
+export async function OPTIONS() {
   return new NextResponse(null, {
     status: 200,
     headers: {
