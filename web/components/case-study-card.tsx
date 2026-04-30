@@ -39,7 +39,6 @@ export function CaseStudyCard({
               <h3 className="text-2xl font-bold text-white">{title}</h3>
             </div>
           )}
-          <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
         </div>
       </CardHeader>
       <CardContent className="p-8 h-full flex flex-col">
@@ -96,4 +95,3 @@ export function CaseStudyCard({
     </Card>
   )
 }
-

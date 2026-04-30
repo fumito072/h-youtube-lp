@@ -54,7 +54,6 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">よーたろch PRプラン</CardTitle>
                   </div>
-                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>
@@ -99,7 +98,6 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">経営者ブランディング</CardTitle>
                   </div>
-                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>
@@ -139,7 +137,6 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">チームコーチング</CardTitle>
                   </div>
-                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>
@@ -196,7 +193,6 @@ export default function ServicePage() {
                     </div>
                     <CardTitle className="text-3xl text-white">商品PR・Web制作</CardTitle>
                   </div>
-                  <a href="/CIOプラン.pdf" target="_blank" rel="noopener noreferrer" className="text-xl text-blue-300 hover:text-blue-100 underline">Forever Amusement</a>
                 </div>
               </CardHeader>
               <CardContent>

@@ -24,7 +24,7 @@ export const serviceCards = [
     title: "商品PR・Web制作",
     label: "制作支援",
     description:
-      "商品PR動画、SNS運用、Webサイト制作、新規企画開発まで事業成長に必要な実行を支援します。",
+      "商品PR動画、SNS運用、Webサイト制作まで、事業成長に必要な実行を支援します。",
     points: ["商品PR", "SNS運用代行", "Webサイト制作"],
   },
 ];
