@@ -24,7 +24,7 @@ export function ContactForm() {
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = () => {
     fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(formData),
@@ -117,4 +117,3 @@ export function ContactForm() {
     </form>
   )
 }
-

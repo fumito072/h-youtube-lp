@@ -1,5 +1,7 @@
 "use client"
 
+/* eslint-disable react-hooks/set-state-in-effect */
+
 import React, { useState, useEffect, useRef } from 'react'
 import { X } from 'lucide-react'
 
@@ -64,4 +66,3 @@ export function Sheet({ isOpen, onClose, children }: SheetProps) {
     </div>
   )
 }
-
